@@ -1,0 +1,6 @@
+<p>data-component works!</p>
+<input type="text"  [(ngModel)]="inputVal">
+<button (click)="OnbtnClick()">click me</button>
+<div *ngIf="showTrueDiv; then trueTemp; else falseTemp"></div>
+<ng-template #trueTemp ><h2 [style.color]="'green'" >hello from the true div</h2></ng-template>
+<ng-template #falseTemp><h2 [style.color]="'red'">hello from the false div</h2></ng-template>
